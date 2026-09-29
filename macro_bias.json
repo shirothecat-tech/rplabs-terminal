@@ -1,0 +1,35 @@
+{
+    "last_updated": "2026-09-29 12:57:14 UTC",
+    "gold_real_yield_engine": {
+        "us_10y_real_rate": 2.83,
+        "z_score_20d": 1.68,
+        "macro_strength": "BEARISH",
+        "interpretation": "Mengukur deviasi suku bunga riil terhadap rata-rata bergerak untuk sentiment Emas."
+    },
+    "currency_probabilities": {
+        "GBP": {
+            "leading_metric": "UK Industrial PPI MoM",
+            "prob_cpi_above_consensus": 0.5,
+            "central_bank_stance": "Dovish / Neutral",
+            "recommended_bias": "GBP/USD Range/Bear"
+        },
+        "JPY": {
+            "leading_metric": "Japan Services CSPI MoM",
+            "prob_cpi_above_consensus": 0.48,
+            "central_bank_stance": "Dovish / Neutral",
+            "recommended_bias": "USD/JPY Range"
+        },
+        "EUR": {
+            "leading_metric": "Germany Industrial PPI MoM",
+            "prob_cpi_above_consensus": 0.5,
+            "central_bank_stance": "Dovish / Neutral",
+            "recommended_bias": "EUR/USD Range/Bear"
+        },
+        "USD": {
+            "leading_metric": "ISM Services Prices Paid",
+            "prob_cpi_above_consensus": 0.5,
+            "central_bank_stance": "Dovish / Rate Cut",
+            "recommended_bias": "DXY Bearish"
+        }
+    }
+}
