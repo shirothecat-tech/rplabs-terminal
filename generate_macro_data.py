@@ -96,9 +96,18 @@ def generate_rplabs_data():
       return "Neutral / Policy Hold", f"{pair_base} Rangebound"
 
   stance_gbp, bias_gbp = get_stance_and_bias(p_gbp, "GBP/USD")
-  stance_jpy, bias_jpy = get_stance_and_bias(p_jpy, "USD/JPY")
   stance_eur, bias_eur = get_stance_and_bias(p_eur, "EUR/USD")
   stance_usd, bias_usd = get_stance_and_bias(p_usd, "DXY")
+  # --- JPY LOGIC (Inverted Citation for USD/JPY Pair) ---
+  if p_jpy >= 0.58:
+    stance_jpy = "Hawkish / Tightening Risk"
+    bias_jpy = "USD/JPY Bearish (JPY Bullish)"  # JPY menguat -> USD/JPY Turun
+  elif p_jpy <= 0.42:
+    stance_jpy = "Dovish / Easing Expectations"
+    bias_jpy = "USD/JPY Bullish (JPY Bearish)"  # JPY melemah -> USD/JPY Naik
+  else:
+    stance_jpy = "Neutral / Policy Hold"
+    bias_jpy = "USD/JPY Rangebound"
 
   macro_output = {
       "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC"),
