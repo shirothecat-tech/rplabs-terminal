@@ -1,35 +1,35 @@
 {
-    "last_updated": "2026-09-29 12:57:14 UTC",
+    "last_updated": "2026-09-29 14:23:02 UTC",
     "gold_real_yield_engine": {
-        "us_10y_real_rate": 2.83,
-        "z_score_20d": 1.68,
-        "macro_strength": "BEARISH",
-        "interpretation": "Mengukur deviasi suku bunga riil terhadap rata-rata bergerak untuk sentiment Emas."
+        "us_10y_real_rate": 1.85,
+        "z_score_20d": 0.0,
+        "macro_strength": "NEUTRAL",
+        "interpretation": "Mengukur deviasi suku bunga riil terhadap rerata 20-hari."
     },
     "currency_probabilities": {
         "GBP": {
             "leading_metric": "UK Industrial PPI MoM",
             "prob_cpi_above_consensus": 0.5,
-            "central_bank_stance": "Dovish / Neutral",
-            "recommended_bias": "GBP/USD Range/Bear"
+            "central_bank_stance": "Neutral / Policy Hold",
+            "recommended_bias": "GBP/USD Rangebound"
         },
         "JPY": {
             "leading_metric": "Japan Services CSPI MoM",
-            "prob_cpi_above_consensus": 0.48,
-            "central_bank_stance": "Dovish / Neutral",
-            "recommended_bias": "USD/JPY Range"
+            "prob_cpi_above_consensus": 0.5,
+            "central_bank_stance": "Neutral / Policy Hold",
+            "recommended_bias": "USD/JPY Rangebound"
         },
         "EUR": {
             "leading_metric": "Germany Industrial PPI MoM",
             "prob_cpi_above_consensus": 0.5,
-            "central_bank_stance": "Dovish / Neutral",
-            "recommended_bias": "EUR/USD Range/Bear"
+            "central_bank_stance": "Neutral / Policy Hold",
+            "recommended_bias": "EUR/USD Rangebound"
         },
         "USD": {
             "leading_metric": "ISM Services Prices Paid",
             "prob_cpi_above_consensus": 0.5,
-            "central_bank_stance": "Dovish / Rate Cut",
-            "recommended_bias": "DXY Bearish"
+            "central_bank_stance": "Neutral / Policy Hold",
+            "recommended_bias": "DXY Rangebound"
         }
     }
 }
