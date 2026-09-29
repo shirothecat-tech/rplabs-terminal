@@ -3,9 +3,10 @@ import json
 import numpy as np
 import pandas as pd
 import requests
+import os
 
-FRED_API_KEY = "MASUKKAN_FRED_API_KEY_ANDA"
-
+# Membaca dari environment variable (GitHub Secrets) atau fallback ke string jika dites lokal
+FRED_API_KEY = os.environ.get("FRED_API_KEY", "77dd5415d0e40b020f478650246f561e")
 
 def get_fred_series(series_id, api_key):
   url = "https://api.stlouisfed.org/fred/series/observations"
